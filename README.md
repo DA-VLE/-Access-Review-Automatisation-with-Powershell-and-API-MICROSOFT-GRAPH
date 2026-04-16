@@ -179,7 +179,7 @@ A token length of around 2430 characters confirmed that a real access token had 
 
 ---
 
-###6. Listing Access Review Definitions
+### 6. Listing Access Review Definitions
 
 Before exporting decisions, I needed to retrieve the correct Access Review Definition ID.
 
@@ -198,7 +198,7 @@ This step allowed me to identify the review definition associated with my first 
 
 ---
 
-###7. Retrieving the Access Review Instance
+### 7. Retrieving the Access Review Instance
 
 Once the definition ID was known, I queried the review instances to get the correct instance ID.
 
@@ -212,7 +212,7 @@ This provided the active or most recent review instance to target.
 
 ---
 
-###8. Exporting Access Review Decisions
+### 8. Exporting Access Review Decisions
 
 Finally, I queried the decision items and exported the results into a CSV file.
 
@@ -231,7 +231,7 @@ Final PowerShell Script
 <img width="754" height="753" alt="image" src="https://github.com/user-attachments/assets/82519cc0-7ee2-4a6b-b96b-645e567cd620" />
 
 
-###Anomaly Detection for Governance Meetings
+## Anomaly Detection for Governance Meetings
 
 
 To make the export more useful for governance teams, I added a simple anomaly detection step after the CSV export.
@@ -257,7 +257,7 @@ reduction of unnecessary access exposure.
 I need to add a script code highlighted in red square. 
 After exporting the Access Review results to CSV, I added a second step to generate an anomaly-focused report.
 
-###Detection rules used
+## Detection rules used
 
 
 The script flags entries when:
@@ -266,7 +266,7 @@ decision = Approve and justification is empty
 decision = NotReviewed
 recommendation and decision do not match
 
-###Why the Anomaly Report Matters
+## Why the Anomaly Report Matters
 
 
 The anomaly report helps governance and IAM teams focus on decisions that may introduce unnecessary risk.
@@ -291,7 +291,7 @@ and for the  generated CSV file Anomalies:
 
 ---
 
-##Key IAM Concepts Practiced
+## Key IAM Concepts Practiced
 This project helped reinforce several important IAM concepts:
 
 Identity Governance
@@ -314,7 +314,7 @@ governance reporting.
 
 ---
 
-##Possible next steps include:
+## Possible next steps include:
 
 automatically looping through all Access Review definitions,
 
