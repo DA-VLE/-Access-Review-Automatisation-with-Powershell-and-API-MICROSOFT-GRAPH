@@ -1,4 +1,4 @@
-# 🔐 Week 4 – Automating Access Review Decisions with PowerShell and Microsoft Graph API
+# 🔐 Automating Access Review Decisions with PowerShell and Microsoft Graph API
 
 ![Microsoft Entra ID](https://img.shields.io/badge/Microsoft%20Entra%20ID-IAM-blue)
 ![Microsoft Graph](https://img.shields.io/badge/Microsoft-Graph-0078D4)
